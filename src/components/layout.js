@@ -30,9 +30,9 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={({site:{siteMetadata}}) => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} siteSubtitle={data.site.siteMetadata.subTitle} />
+        <Header siteTitle={siteMetadata.title} siteSubtitle={siteMetadata.subTitle} />
         <Container>
           <section>{children}</section>
         </Container>

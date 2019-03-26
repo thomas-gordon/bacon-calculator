@@ -13,12 +13,19 @@ const Wrapper = styled.div`
 
 const Input = styled.input`
 	text-align:center;
+	&[readonly] {
+		border-color:transparent;
+		color: #828282;
+		background: #eaeaea;
+		box-shadow: inset 0px 0px 3px 1px #cecece;
+	}
 `;
 
 const CustomField = props => {
     const { field, form } = props;
     const name = field.name;
-    const errors = form.errors;
+	const errors = form.errors;
+
     return (
         <Wrapper>
             <Label
@@ -29,12 +36,11 @@ const CustomField = props => {
             </Label>
 
             <Input
-                {...props.field}
-                type={props.type}
+				{...props.field}
+				type={props.type}
+				readOnly={props.readOnly}
                 disabled={form.isSubmitting}
-                focussed={true}
                 autoComplete="off"
-				{...props}
             />
         </Wrapper>
     );

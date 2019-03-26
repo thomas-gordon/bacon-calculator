@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@hot-loader/react-dom": "^16.8.5",
+    "@material-ui/core": "^3.9.2",
     "babel-plugin-styled-components": "^1.10.0",
     "formik": "^1.5.1",
     "gatsby": "^2.2.11",
