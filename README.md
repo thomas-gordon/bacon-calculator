@@ -4,7 +4,7 @@ Get your pig, get it cured!
 
 ## Setup
 
-This is a (gatsby)[https://www.gatsbyjs.org/docs/] build setup inside (Docker)[https://docs.docker.com/compose/compose-file/] for portability. It's my testing ground for Gatsby features and future proofed CSS-in-JS methodologies.
+This is a [gatsby](https://www.gatsbyjs.org/docs/) build setup inside [Docker](https://docs.docker.com/compose/compose-file/) for portability. It's my testing ground for Gatsby features and future proofed CSS-in-JS methodologies.
 
 1. `docker-compose build`
 
