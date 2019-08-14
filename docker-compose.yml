@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+    frontend:
+        build:
+            context: ./
+        ports:
+            - "80:8000"
+        volumes:
+            - "./src:/app/src:cached"
+            - "./dev:/app/dev:cached"
+            - "./.prettier:/app/.prettier:cached"
+            - "./package.json:/app/package.json:cached"
+            - "./package-lock.json:/app/package-lock.json:cached"
+            - "./gatsby-browser.js:/app/gatsby-browser.js:cached"
+            - "./gatsby-config.js:/app/gatsby-config.js:cached"
+            - "./gatsby-node.js:/app/gatsby-node.js:cached"
